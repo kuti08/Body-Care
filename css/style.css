@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* || CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+input {
+    display: block;
+}
+
+/* || VARIBLES */
+
+:root {
+    /* COLOR */
+    --BGIMAGE: url('/img/background-img.jpg') no-repeat center;
+    --BGCOLOR: rgb(255, 255, 255, 0.38);
+
+    /* FONT */
+    --FS: clamp(1.75rem, 3vh, 2.25rem);
+    --FS-SM: clamp(1.25rem, 2vh, 1.5rem);
+}
+
+/* || UTILITY CLASSES */
+
+/* || GENERAL STYLE */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    background: var(--BGIMAGE);
+    background-size: cover;
+    font-size: var(--FS) var(--FS-SM);
+    line-height: 1.6;
+}
+
+button {
+    background-color: #6DA01E;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #67ac00;
+}
+
+button:hover {
+    background-color: #6DA01E;
+    transition: all 2s 0.1s;
+    
+}
+
+.main__container {
+    background-color: var(--BGCOLOR);
+    height: auto;
+    margin: 70px 20px;
+    max-width: 589px;
+    padding: 50px 0;
+}
+
+.main__form {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 50px auto;
+    max-width: 350px;
+    position: relative;
+    row-gap: 20px;
+}
+
+.form__input {
+    border-radius: 8px;
+    border: 1px solid #E0DEDE;
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.password{
+    position: relative;
+}
+
+.password img {
+    position: absolute;
+    top: 5px;
+    right: 3%;
+}
+
+.register {
+    border-radius: 8px;
+    border: 1px solid #6DA01E;
+    color: #6DA01E;
+    font-weight: 600;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.register img {
+    position: absolute;
+    right: 16%;
+    top: 7px;
+}
+
+.form_p {
+    text-align: center;
+}
